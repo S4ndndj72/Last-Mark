@@ -15,7 +15,7 @@ const Login = () => {
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
   const user = useSelector((state) => state.user);
-  const [form, setForm] = useState({ username: '', password: '' });
+  const [form, setForm] = useState({ username: 'aa', password: 'aa' });
   const [error, setError] = useState('');
 
   const handleChange = (e) => {

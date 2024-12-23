@@ -17,13 +17,6 @@ dotenv.config();
 const app = express();
 const server = http.createServer(app);
 
-const io = new Server(server, {
-  cors: {
-    origin: "*",
-    credentials: true,
-  },
-});
-
 var socket = io.connect('http://localhost:8080')
 
 app.use(cors({

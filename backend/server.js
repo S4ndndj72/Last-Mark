@@ -192,5 +192,5 @@ app.use('/api/chat', chatRoutes);
 app.get("/:universalURL", (req, res) => {
    res.send("404 URL NOT FOUND..");
 });
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));

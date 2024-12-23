@@ -189,5 +189,5 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/chat', chatRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 34200;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
